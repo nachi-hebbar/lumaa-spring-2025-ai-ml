@@ -1,17 +1,25 @@
-# AI/Machine Learning Intern Challenge: Simple Content-Based Recommendation Deliverables:
+# AI/Machine Learning Intern Challenge: Simple Content-Based Recommendation Overview:
+
+I built the content-based recommendation system using the following approach:
+
+1. **Preprocessing of text**: Cleaning the dataset and removing null values
+2. **TF-IDF Vectorization**: Converting **movie overview** and **genre** into TF-IDF vectors.
+3. **Weighted Cosine Similarity**: Weighted cosine similarity between user query and movie overview and genre, to get top 30 movies.
+4. **Re-Ranking based on Popularity Score**: Re-rank the top 30 movies based on popularity. This ensures returning relevant and popular movies to the user.
+5. **Recommendation**: Return top 10 movies to user
 
 
-📌 Dataset
+## 📌 Dataset
 
 I’m using the TMDB 5000 Movie Dataset from Kaggle. Link for dataset: https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv. I have uploaded the same to this repo.
 
-⚙️ Setup
+## ⚙️ Setup
 
 Python 3.x (Tested on 3.10+)
 
 If using Colab, just upload the dataset and run the cells.
 
-🚀 Running the Code
+## 🚀 Running the Code
 
 In Google Colab or Jupyter, run all cells and execute the following function with a query:
 
@@ -19,7 +27,7 @@ recommend("I love thrilling action movies set in space, with a comedic twist.")
 
 It'll give you top 10 recommendations based on genre and plot similarity, re-ranked by popularity.
 
-🎯 Example Output
+## 🎯 Example Output
 
 Here’s results from a sample run:
 
@@ -38,5 +46,5 @@ Top Recommendations For You:
 9. Inkheart (Similarity: 0.0637, Popularity: 27.018886)
 10. Open Season (Similarity: 0.0792, Popularity: 26.61951)
 
-📸 Results Screenshot
+## 📸 Results Screenshot
 ![image](https://github.com/user-attachments/assets/d10be965-44da-4e4c-98dc-8e67c2c3dd1d)
