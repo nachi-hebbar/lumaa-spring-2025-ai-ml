@@ -3,8 +3,8 @@
 I built the content-based recommendation system using the following approach:
 
 1. **Preprocessing of text**: Cleaning the dataset and removing null values
-2. **TF-IDF Vectorization**: Converting **movie overview** and **genre** into TF-IDF vectors.
-3. **Weighted Cosine Similarity**: Weighted cosine similarity between user query and movie overview and genre, to get top 30 movies.
+2. **TF-IDF Vectorization**: Converting **movie plot summary** and **genre** into TF-IDF vectors.
+3. **Weighted Cosine Similarity**: Weighted cosine similarity between user query and the movie summary and genre, to get top 30 movies.
 4. **Re-Ranking based on Popularity Score**: Re-rank the top 30 movies based on popularity. This ensures returning relevant and popular movies to the user.
 5. **Recommendation**: Return top 10 movies to user
 
