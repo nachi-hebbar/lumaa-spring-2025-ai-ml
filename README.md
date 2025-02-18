@@ -48,3 +48,5 @@ Top Recommendations For You:
 
 ## 📸 Results Screenshot
 ![image](https://github.com/user-attachments/assets/d10be965-44da-4e4c-98dc-8e67c2c3dd1d)
+
+### Salary Expectation: 30$/hour
